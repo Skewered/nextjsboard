@@ -16,11 +16,11 @@ export const lusitana = Lusitana({
 });
 
 // 로컬폰트
-// export const pretendard = localFont({
-//   src: [
-//     { path: '../../public/fonts/Pretendard-Regular.woff', weight: '400' },
-//     { path: '../../public/fonts/Pretendard-Medium.woff', weight: '500' },
-//     { path: '../../public/fonts/Pretendard-Bold.woff', weight: '700' },
-//   ],
-//   display: 'swap',
-// });
+export const pretendard = localFont({
+  src: [
+    { path: '../../public/fonts/Pretendard-Regular.woff', weight: '400' },
+    { path: '../../public/fonts/Pretendard-Medium.woff', weight: '500' },
+    { path: '../../public/fonts/Pretendard-Bold.woff', weight: '700' },
+  ],
+  display: 'swap',
+});
