@@ -1,5 +1,5 @@
 import '@/app/ui/global.css';
-// import { pretendard } from '@/app/ui/fonts';
+import { pretendard } from '@/app/ui/fonts';
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className={pretendard.className}>{children}</body>
     </html>
   );
 }
