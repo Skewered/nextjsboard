@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className="pretendard.className">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
