@@ -36,8 +36,8 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'bg-[#f9fafb] rounded-md flex h-[48px] items-center px-3 gap-2 text-[14px] hover:bg-[#e0f2fe] hover:text-[#2f6feb] sm:flex-grow sm:justify-center',
-              { 'text-[#2f6feb] bg-[#e0f2fe]': pathName === link.href }
+              'bg-[#f9fafb] rounded-md flex h-[48px] items-center px-3 gap-2 text-[14px] hover:bg-[#e0f2fe] hover:text-[#2f6ffe] sm:flex-grow sm:justify-center',
+              { 'text-[#2f6ffe] bg-[#e0f2fe]': pathName === link.href }
               // { 'text-[#2f6feb] bg-[#e0f2fe]': index === i }
             )}
             // onClick={() => setIndex(i)}
