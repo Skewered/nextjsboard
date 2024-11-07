@@ -9,6 +9,9 @@ import {
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
+// import { UpdateInvoice } from '@/app/ui/invoices/buttons';
+// import { UpdateInvoice } from '@/app/lib/actions';
+import { updateInvoice } from '@/app/lib/actions';
 
 export default function EditInvoiceForm({
   invoice,
@@ -17,8 +20,13 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
+  // uuid 를 인코딩하여 서버액션으로 전달.
+  // updateInvoice 만 action 연결시 formdata 만 전달되므로
+  // formData 와 다른 값을 같이 보내야할 경우 bind 에 전달할 값을 넣어둠.
+  const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
+
   return (
-    <form>
+    <form action={updateInvoiceWithId}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Customer Name */}
         <div className="mb-4">

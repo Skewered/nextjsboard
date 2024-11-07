@@ -89,6 +89,7 @@ export async function fetchCardData() {
   }
 }
 
+// 페이지당 보일 데이터 개수
 const ITEMS_PER_PAGE = 6;
 export async function fetchFilteredInvoices(
   query: string,

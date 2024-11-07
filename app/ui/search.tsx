@@ -15,7 +15,9 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
   const handleSearch = useDebouncedCallback((term: string) => {
     const params = new URLSearchParams(searchParams);
-    console.log('검색중 ');
+    // 검색어 입력마다 페이지 번호 1로 초기화
+    params.set('page', '1');
+
     if (term) {
       params.set('query', term);
     } else {
